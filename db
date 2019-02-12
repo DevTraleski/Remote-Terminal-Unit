@@ -1,4 +1,5 @@
-!UJDYEKVVMBFI3PET
-serial1:chavedtls
-serial2:chavedtsl
-serial3:chaveldst
+lmk:chavelmk
+nonce:base32secret3232
+gnonce:UJDYEKVVMBFI3PET
+dtlsk:chavinhamassa
+infox:12.54

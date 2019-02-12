@@ -164,3 +164,75 @@ cd
 ls
 nano main.py 
 exit
+cd
+ls
+git add --all .
+git commit -m "Implementing multicast coap server - failing to receive anything"
+git push
+exit
+cd
+ls
+pip3 show coapthon
+pip3 list
+pip3 show CoAPthon3
+cd /usr/local/lib/python3.4/dist-packages/
+ls
+cd coapthon/
+ls
+ls -la
+cd ser
+cd server/
+ls
+nano coap.py 
+cd
+ls
+exit
+cd
+ls
+nano main.py 
+exit
+cd
+ls
+nano main.py 
+exit
+cd
+ls
+python3 main.py 
+cd /usr/local/lib/python3.4/dist-packages/
+ls
+cd coapthon/
+ls
+cd ser
+cd server/
+ls
+nano coap.py 
+cd
+ls
+python3 main.py 
+nano main.py 
+python3 main.py 
+python3 main.py 
+cd /usr/local/lib/python3.4/dist-packages/
+cd coapthon/
+ls
+cd ser
+cd server/'
+cd server/
+ls
+nano coap.py 
+cd
+python3 main.py 
+cd /usr/local/lib/python3.4/dist-packages/coapthon/server/
+nano coap.py 
+cd
+python3 main.py 
+nano main.py 
+exit
+cd
+ls
+cd
+ls
+nano main.py 
+python3 main.py 
+nano main.py 
+exit
