@@ -451,3 +451,9 @@ python3 main.py
 pip3 search pydtls
 pip3 search dtls
 exit
+cd
+git add --all .
+git commit -m "Criptografia resolvida retornando resposta definitiva"
+git push
+git config --global push.default simple
+exit
