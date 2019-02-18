@@ -20,6 +20,7 @@ class Responder():
 	nonce = "Null"
 	groupNonce = "Null"
 	lmk = "Null"
+	serial = "Null"
 	database = {}
 
 	def __init__(self):
@@ -34,6 +35,7 @@ class Responder():
 		self.nonce = self.database['nonce'][:-1]
 		self.lmk = self.database['lmk'][:-1]
 		self.dtlsKey = self.database['dtlsk'][:-1]
+		self.serial = self.database['serial'][:-1]
 
 	def respond(self, request):
 		jsonStr = request.payload
@@ -70,9 +72,10 @@ class Responder():
 
 		if plainText in self.database.keys():
 			#Value, encrypt, json, return
-			value = self.database[plainText]			
+			value = self.database[plainText][:-1]			
 
 			totp = pyotp.TOTP(self.nonce)
+			now = time.time()
 			totpKey = totp.now()
 			print("TOTP Key: " + totpKey)
 			m = hashlib.md5()
@@ -87,11 +90,26 @@ class Responder():
 			cryptedValue = encryptor.encrypt(value)
 
 			dados = { 'data' : str(binascii.hexlify(cryptedValue).upper())[2:-1],
-				'timestamp' : dict['timestamp'],
-				'iv' : str(binascii.hexlify(IV).upper())[2:-1] }
+				'timestamp' : now,
+				'iv' : str(binascii.hexlify(IV).upper())[2:-1],
+				'serial' : self.serial }
+			lastLayer = json.dumps(dados)
+
+			#Second encryption wrap
+			IV = os.urandom(16)
+			encryptor = AES.new(self.dtlsKey, AES.MODE_CBC, IV=IV)
+			length = 16 - (len(lastLayer) % 16)
+			data = bytes([length])*length
+			lastLayer += data.decode("utf-8")
+			secondCrypt = encryptor.encrypt(lastLayer)
+
+			dados = { 'data' : str(binascii.hexlify(secondCrypt).upper())[2:-1],
+				'iv' : str(binascii.hexlify(IV).upper())[2:-1],
+				'serial' : self.serial }
 			payload = json.dumps(dados)
 			
-			#Send different request to Gateway wait for ACK and return
+
+			#Send request to Gateway server wait for ACK and return
 			client = HelperClient(server=(request.source[0], 1337))
 			
 			request = Request()

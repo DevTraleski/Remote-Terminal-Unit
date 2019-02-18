@@ -1,103 +1,3 @@
-ls
-cd ~
-ls
-pwd
-cd
-ls
-cd
-ls
-cd /
-ls
-cd
-ls
-nano Networker.py 
-nano main.py 
-nano Networker.py 
-nano main.py 
-exit
-ls
-cd
-ls
-nano /etc/passwd 
-l
-l
-ls
-nano main.py 
-exit
-cd
-ls
-nano Networker.py 
-nano main.py 
-nano Networker.py 
-nano Networker.py 
-nano main.py 
-exit
-cd
-ls
-nano main.py 
-exit
-exot
-exit
-ls
-cd
-ls
-nano Networker.py 
-python3 Networker.py 
-python3 Networker.py 
-nano Networker.py 
-python3 Networker.py 
-nano Networker.py 
-python3 Networker.py 
-nano Networker.py 
-python3 Networker.py 
-nano Networker.py 
-nano Networker.py 
-python3 Networker.py 
-nano Networker.py 
-python3 Networker.py 
-nano Networker.py 
-python3 Networker.py 
-nano Networker.py 
-exit
-cd
-ls
-nano Networker.py 
-python3 Networker.py 
-ls
-nano main.py 
-nano Networker.py 
-python3 Networker.py 
-ls
-exit
-cd
-ls
-git commit -m "First commit"
-git config --global user.email "dev.traleski@gmail.com"
-git config --global user.name "DevTraleski"
-git commit -m "First commit"
-ls -la
-git push
-git remote add origin https://github.com/DevTraleski/Remote-Terminal-Unit.git
-git push -u origin master
-ls
-mv main.py rest.py
-nano main.py
-exit
-cd
-ls
-nano main.py 
-python3 main.py 
-nano main.py 
-python3 main.py 
-pip3 list
-nano main.py 
-python3 main.py 
-nano main.py 
-python3 main.py 
-nano main.py 
-python3 main.py 
-nano main.py 
-ls
 cd ..
 ls
 wget https://github.com/Tanganelli/CoAPthon3
@@ -456,4 +356,145 @@ git add --all .
 git commit -m "Criptografia resolvida retornando resposta definitiva"
 git push
 git config --global push.default simple
+exit
+cd
+git add --all .
+git commit -m "Configuring Cert for DTLS"
+git push
+exit
+ls
+cd 
+ls
+nano Responder.py 
+python3 main.py 
+ls
+nano db 
+python3 main.py 
+LS
+ls
+nano Responder.py 
+nano db 
+nano Responder.py 
+python3 main.py 
+nano Responder.py 
+nano db 
+nano Responder.py 
+python3
+python3 main.py 
+python3 main.py 
+python3 main.py 
+python3 main.py 
+python3 main.py 
+python3 main.py 
+python3 main.py 
+python3 main.py 
+exit
+cd
+ls
+python3 main.py 
+exit
+cd
+python3 main.py 
+ls
+nano Responder.py 
+cat db 
+ls
+nano Responder.py 
+pip3 list
+python3 main.py 
+nano Responder.py 
+python3 main.py 
+nano Responder.py 
+python3 main.py 
+nano Responder.py 
+python3 main.py 
+exit
+cd
+ls
+python3 main.py 
+exit
+cd
+ls
+nano setup.py
+cat db 
+nano setup.py 
+nano db 
+nano setup.py 
+cat db 
+nano setup.py 
+nano db 
+nano setup.py 
+cat db 
+nano setup.py 
+exit
+cd
+ls
+nano setup.py 
+nano Responder.py 
+nano setup.py 
+exit
+cd
+ls
+exit
+cd
+ls
+nano setup.py 
+python3 setup.py 172.0.17.5 1337
+nano setup.py 
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+nano setup.py 
+python3 setup.py 172.0.17.5 1337
+nano setup.py 
+python3 setup.py 172.0.17.5 1337
+ls
+nano mia
+nano main.py 
+nano setup.py 
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+nano setup.py 
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+nano setup.py 
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+nano Responder.py 
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+nano setup.py 
+python3 setup.py 172.0.17.5 1337
+nano setup.py 
+python3 setup.py 172.0.17.5 1337
+nano setup.py 
+python3 setup.py 172.0.17.5 1337
+nano setup.py 
+nano setup.py 
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+python3 setup.py 172.0.17.5 1337
+nano setup.py 
+nano db 
+nano setup.py 
+cat db 
+python3 setup.py 172.0.17.5 1337
+cat db 
+ps
 exit
