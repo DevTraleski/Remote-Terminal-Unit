@@ -1,79 +1,3 @@
-cd ..
-ls
-wget https://github.com/Tanganelli/CoAPthon3
-apt-get install wgety
-apt-get install wget
-wget https://github.com/Tanganelli/CoAPthon3
-ls
-file CoAPthon3 
-rm CoAPthon3 
-git clone https://github.com/Tanganelli/CoAPthon3
-ls
-cd CoAPthon3/
-ls
-cp exampleresources.py ../Remote-Terminal-Unit/
-cd ../Remote-Terminal-Unit/
-ls
-python3 main.py 
-ls
-nano main.py 
-python3 main.py 
-exit
-top
-ls
-cd
-ls
-python3 main.py 
-top
-ls
-exit
-cd
-ls
-python3 main.py 
-ps
-exit
-cd
-ls
-nano main.py 
-nano main.py 
-python3 main.py 
-exit
-cd
-ls
-nano main.py 
-exit
-ping 224.0.0.0
-iperf
-apt-get install iperf
-iperf -s -u -B 224.0.0.0 -T 32 -t 3 -i 1
-cd
-ls
-python3 main.py 
-exit
-cd
-l
-ls
-top
-ls
-nano main.py 
-iperf -s -u -B 224.0.0.0 -p 5683 -T 32 -t 3 -i 1
-ls
-nano main.py 
-exit
-cd
-ls
-nano main.py 
-exit
-cd
-ls
-git add --all .
-git commit -m "Implementing multicast coap server - failing to receive anything"
-git push
-exit
-cd
-ls
-pip3 show coapthon
-pip3 list
 pip3 show CoAPthon3
 cd /usr/local/lib/python3.4/dist-packages/
 ls
@@ -497,4 +421,80 @@ cat db
 python3 setup.py 172.0.17.5 1337
 cat db 
 ps
+exit
+cd
+ls
+git add --all .
+git commit -m "GetInfo and Setup fully implemented"
+git push
+exit
+cd
+ls
+python3 main.py 
+nano db 
+nano Responder.py 
+python3 main.py 
+ls
+python3 main.py 
+nano Responder.py 
+python3 Responder.py 
+nano Responder.py 
+python3 Responder.py 
+nano Responder.py 
+python3 Responder.py 
+python3 main.py 
+nano Responder.py 
+python3 main.py 
+python3 main.py 
+ls
+ls -la
+python3 setup.py 172.0.17.5 1337
+python3 main.py 
+python3 setup.py 172.0.17.5 1337
+python3 main.py 
+ls
+nano db 
+python3 main.py 
+nano db 
+nano Responder.py 
+ls
+cat db 
+ls
+python3 setup.py 
+python3 setup.py 172.0.17.5 1337
+nano db 
+python3 setup.py 172.0.17.5 1337
+python3 main.py 
+python3 main.py 
+ls
+nano db 
+python3 main.py 
+nano db 
+nano Responder.py 
+python3 main.py 
+nano Responder.py 
+python3 main.py 
+nano Responder.py 
+python3 main.py 
+nano Responder.py 
+python3 main.py 
+nano Responder.py 
+python3 main.py 
+nano Responder.py 
+python3 main.py 
+ls
+nano db 
+python3 main.py 
+nano db 
+ls
+python3 setup.py 172.0.17.5 1337
+cat db 
+python3 main.py 
+nano Responder.py 
+nano main.py 
+nano Responder.py 
+nano main.py 
+python3 main.py 
+nano Responder.py 
+python3 main.py 
 exit

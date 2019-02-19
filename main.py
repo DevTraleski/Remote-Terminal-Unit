@@ -22,6 +22,7 @@ class CoAPServer(CoAP):
 def main():
 	server = CoAPServer("224.0.1.187", 5001, True)
 	try:
+		responder.alert()
 		server.listen(10)
 	except KeyboardInterrupt:
 		print ("Server Shutdown")
