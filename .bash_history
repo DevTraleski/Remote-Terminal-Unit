@@ -1,43 +1,3 @@
-pip3 show CoAPthon3
-cd /usr/local/lib/python3.4/dist-packages/
-ls
-cd coapthon/
-ls
-ls -la
-cd ser
-cd server/
-ls
-nano coap.py 
-cd
-ls
-exit
-cd
-ls
-nano main.py 
-exit
-cd
-ls
-nano main.py 
-exit
-cd
-ls
-python3 main.py 
-cd /usr/local/lib/python3.4/dist-packages/
-ls
-cd coapthon/
-ls
-cd ser
-cd server/
-ls
-nano coap.py 
-cd
-ls
-python3 main.py 
-nano main.py 
-python3 main.py 
-python3 main.py 
-cd /usr/local/lib/python3.4/dist-packages/
-cd coapthon/
 ls
 cd ser
 cd server/'
@@ -496,5 +456,45 @@ nano Responder.py
 nano main.py 
 python3 main.py 
 nano Responder.py 
+python3 main.py 
+exit
+cd
+ls
+python3 main.py 
+nano main.py 
+python3 main.py 
+nano Responder.py 
+nano Responder.py 
+python3 main.py 
+python3 main.py 
+ls
+git add --all .
+git commit -m "Implementacao do alert"
+git push
+exit
+cd
+ls
+python3 main.py 
+nano main.py 
+python3 main.py 
+nano main.py 
+nano alert.py
+python3 main.py 
+python3 alert.py 
+nano alert.py
+python3 alert.py 
+nano alert.py
+python3 alert.py 
+python3 alert.py 
+python3 alert.py 
+python3 alert.py 
+python3 alert.py 
+python3 alert.py 
+python3 alert.py 
+python3 alert.py 
+python3 alert.py 
+python3 alert.py 
+python3 alert.py 
+python3 mai
 python3 main.py 
 exit
