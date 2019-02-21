@@ -5,54 +5,66 @@ from coapthon import defines
 
 from Crypto.Cipher import AES
 
+import os.path
 import sys
 import json
 import binascii
+import base64
+import hashlib
+import random
 
-db = open("db", "r+")
+def setup():
+	
+	db = open("db", "w+")
 
-data = db.readlines()
-database = {}
+	serial = 'serial' + str(sys.argv[1])
+	nonce = str(base64.b32encode(sys.argv[1].encode('utf-8')))[2:-1]
 
-for line in data:
-	info = line.split(":")
-	database[info[0]] = info[1]
+	db.write('serial:' + str(serial) + '\n')
+	db.write('nonce:' + nonce + '\n')
+	db.write('infox:' + str(random.randint(1,1000)) + '\n')
 
-serial = database['serial'][:-1]
-nonce = database['nonce'][:-1]
+	gatewayAddress = '172.0.17.5'
+	gatewayPort = 1337
 
-gatewayAddress = sys.argv[1]
-gatewayPort = sys.argv[2]
-
-client = HelperClient(server=(gatewayAddress, int(gatewayPort)))
+	client = HelperClient(server=(gatewayAddress, int(gatewayPort)))
 			
-request = Request()
-request.destination = client.server
-request.code = defines.Codes.GET.number
-request.uri_path = 'setup/'
-request.payload = serial
+	request = Request()
+	request.destination = client.server
+	request.code = defines.Codes.GET.number
+	request.uri_path = 'setup/'
+	request.payload = serial
 
-response = client.send_request(request)
-client.stop()
+	response = client.send_request(request)
+	client.stop()
 
-#Decrypt
-payload = response.payload
-dict = json.loads(payload)
+	#Decrypt
+	payload = response.payload
+	dict = json.loads(payload)
 
-#Check for error
-if 'error' in dict.keys():
-	print("Error: " + dict['error'])
+	#Check for error
+	if 'error' in dict.keys():
+		print("Error: " + dict['error'])
+	else:
+		m = hashlib.md5()
+		m.update(nonce.encode("UTF-8"))
+		hashKey = m.hexdigest()[:16]
+		
+		IV = binascii.unhexlify(dict['iv'])
+		data = binascii.unhexlify(dict['data'])
+
+		decipher = AES.new(hashKey, AES.MODE_CBC, IV=IV)
+		jsonStr = decipher.decrypt(data)
+		jsonStr = jsonStr[:-jsonStr[-1]]
+
+		dict = json.loads(jsonStr.decode('utf-8'))
+
+		db.write("dtlsk:" + dict['dtlsk'] + '\n')
+		db.write("gnonce:" + dict['gnonce'] + '\n')
+
+		print("Setup complete")
+
+if os.path.isfile('./db') == True:
+	print("No need to setup start server")
 else:
-	IV = binascii.unhexlify(dict['iv'])
-	data = binascii.unhexlify(dict['data'])
-
-	decipher = AES.new(nonce, AES.MODE_CBC, IV=IV)
-	jsonStr = decipher.decrypt(data)
-	jsonStr = jsonStr[:-jsonStr[-1]]
-
-	dict = json.loads(jsonStr.decode('utf-8'))
-
-	db.write("dtlsk:" + dict['dtlsk'] + '\n')
-	db.write("gnonce:" + dict['gnonce'] + '\n')
-
-	print("Setup complete")
+	setup()
