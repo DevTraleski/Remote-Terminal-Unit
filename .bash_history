@@ -1,32 +1,4 @@
 python3 main.py 
-ls
-nano Responder.py 
-nano main.py 
-python3 main.py 
-nano Responder.py 
-python3 main.py 
-nano Responder.py 
-python3 Responder.py 
-nano Responder.py 
-python3 Responder.py 
-nano Responder.py 
-python3 Responder.py 
-nano Responder.py 
-python3 Responder.py 
-nano Responder.py 
-python3 Responder.py 
-nano Responder.py 
-python3 Responder.py 
-nano Responder.py 
-python3 Responder.py 
-nano Responder.py 
-python3 main.py 
-ls
-nano Responder.py 
-nano Responder.py 
-python3 main.py 
-nano Responder.py 
-python3 main.py 
 nano Responder.py 
 nano main.py 
 python3 main.py 
@@ -497,4 +469,32 @@ nano Responder.py
 python3 main.py 
 ls
 rm db 
+exit
+ls
+cd
+ls
+git add --all .
+git commit -m "Changes for tests"
+git push
+exi
+exit
+cd
+ls
+nc
+ping 172.0.17.3
+ping 172.0.17.2
+nc 172.0.17.3 80
+nc 172.0.17.3 443
+wget 
+wget 172.0.17.3
+wget 172.0.17.3 --no-check-certificate
+ls
+less index.html 
+rm index.html 
+curl 172.0.17.3
+wget 0.0.0.0
+wget 0.0.0.0 443
+wget 0.0.0.0:443
+wget 0.0.0.0
+ls
 exit

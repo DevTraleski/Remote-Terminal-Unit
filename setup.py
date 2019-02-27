@@ -22,7 +22,13 @@ def setup():
 
 	db.write('serial:' + str(serial) + '\n')
 	db.write('nonce:' + nonce + '\n')
-	db.write('infox:' + str(random.randint(1,1000)) + '\n')
+	db.write('info2:' + 'a'*2 + '\n')
+	db.write('info4:' + 'a'*4 + '\n')
+	db.write('info8:' + 'a'*8 + '\n')
+	db.write('info16:' + 'a'*16 + '\n')
+	db.write('info32:' + 'a'*32 + '\n')
+	db.write('info64:' + 'a'*64 + '\n')
+	db.write('info128:' + 'a'*128 + '\n')
 
 	gatewayAddress = '172.0.17.5'
 	gatewayPort = 1337
