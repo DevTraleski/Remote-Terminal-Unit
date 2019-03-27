@@ -1,41 +1,3 @@
-python3 main.py 
-nano Responder.py 
-nano main.py 
-python3 main.py 
-nano main.py 
-python3 main.py 
-nano main.py 
-exit
-cd
-python3 main.py 
-nano main.py 
-nano Responder.py 
-python3 main.py 
-nano Responder.py 
-nano main.py 
-python3 mai
-python3 main.py 
-exit
-cd
-ls
-top
-ls
-python3 main.py 
-nano main.py 
-ls
-nano Responder.py 
-nano main.py 
-exit
-cd
-ls
-nano Responder.py 
-nano main.py 
-nano Responder.py 
-python3 main.py 
-nano Responder.py 
-python3 main.py 
-nano Responder.py 
-python3 main.py 
 nano Responder.py 
 python3 main.py 
 pip3 search pydtls
@@ -496,5 +458,43 @@ wget 0.0.0.0
 wget 0.0.0.0 443
 wget 0.0.0.0:443
 wget 0.0.0.0
+ls
+exit
+cd
+ls
+nano setup.py 
+rm db 
+ls
+python3 setup.py 
+python3 setup.py 1
+ls
+rm db 
+python3 setup.py 1
+cat db 
+ls
+rm db 
+ls
+git add --all .
+git commit -m "RTU Bonitao pra teste"
+git push
+ls
+exit
+ls
+cd
+ls
+nano main.py 
+nano Responder.py 
+exit
+ls
+cd
+ls
+cd Responder.py 
+nano Responder.py 
+exit
+cd
+ls
+nano Responder.py 
+exit
+cd
 ls
 exit

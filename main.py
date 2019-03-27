@@ -8,7 +8,6 @@ class Info(Resource):
 	def __init__(self, name="Info", coap_server=None):
 		super(Info, self).__init__(name, coap_server, visible=True,
                                     observable=True, allow_children=True)
-		self.payload = "12.4"
 
 	def render_GET(self, request):
 		self.payload = responder.respond(request)

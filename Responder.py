@@ -22,8 +22,6 @@ class Responder():
 	serial = "Null"
 	database = {}
 
-	responseTime = None
-
 	def __init__(self):
 		with open("db", "r") as f:
 			data = f.readlines()
@@ -83,9 +81,6 @@ class Responder():
 		request.uri_path = path
 		request.payload = payload
 		
-		endTime = time.time()
-		print("=========== Response time was " + str(endTime - rtime))
-
 		client.send_request(request)
 		client.stop()
 
