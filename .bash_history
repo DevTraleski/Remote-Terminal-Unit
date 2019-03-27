@@ -1,3 +1,25 @@
+<<<<<<< HEAD
+=======
+ls
+top
+ls
+python3 main.py 
+nano main.py 
+ls
+nano Responder.py 
+nano main.py 
+exit
+cd
+ls
+nano Responder.py 
+nano main.py 
+nano Responder.py 
+python3 main.py 
+nano Responder.py 
+python3 main.py 
+nano Responder.py 
+python3 main.py 
+>>>>>>> ecdae07d37706fc61ec2793850c76dbc280651c6
 nano Responder.py 
 python3 main.py 
 pip3 search pydtls
@@ -479,6 +501,7 @@ git commit -m "RTU Bonitao pra teste"
 git push
 ls
 exit
+<<<<<<< HEAD
 ls
 cd
 ls
@@ -498,3 +521,5 @@ exit
 cd
 ls
 exit
+=======
+>>>>>>> ecdae07d37706fc61ec2793850c76dbc280651c6
